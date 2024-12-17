@@ -1,6 +1,20 @@
-Create api endpoints for a quiz app in Spring boot. Using the apis, a user can do the following:
+Here is how to test the end points:
+Test API Endpoints
+Start a Quiz:
+POST
+URL: http://localhost:8080/quiz/start
+Parameters: userName=John
 
-1. Start new quiz session.
-2. Get a random multiple choice question from a set of questions in database
-3. Submit answer and
-4. Get the total questions answered by user with details on correct and incorrect submission.
+Get a Random Question:
+GET
+URL: http://localhost:8080/quiz/question
+
+Submit an Answer:
+POST
+URL: http://localhost:8080/quiz/submit
+Parameters:
+userId=1
+questionId=1
+answer=4
+
+
